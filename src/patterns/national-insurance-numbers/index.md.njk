@@ -12,7 +12,7 @@ layout: layout-pane.njk
 
 Ask users to provide their National Insurance number.
 
-{{ example({group: "patterns", item: "national-insurance-numbers", example: "default", html: true, nunjucks: true, open: false, size: "s"}) }}
+{{ example({group: "patterns", item: "national-insurance-numbers", example: "default", html: true, nunjucks: false, open: false, size: "s"}) }}
 
 ## When to use this pattern
 
@@ -34,13 +34,13 @@ You should:
 - allow upper and lower case letters and strip out spaces before validating
 - avoid using ‘AB 12 34 56 C’ as an example because it belongs to a real person and use ‘QQ 12 34 56 C’ instead
 
-{{ example({group: "patterns", item: "national-insurance-numbers", example: "default", html: true, nunjucks: true, open: true, size: "s"}) }}
+{{ example({group: "patterns", item: "national-insurance-numbers", example: "default", html: true, nunjucks: false, open: true, size: "s"}) }}
 
 ### Error messages
 
 Error messages should be styled like this:
 
-{{ example({group: "patterns", item: "national-insurance-numbers", example: "error", html: true, nunjucks: true, open: true, size: "s"}) }}
+{{ example({group: "patterns", item: "national-insurance-numbers", example: "error", html: true, nunjucks: false, open: true, size: "s"}) }}
 
 Make sure errors follow the guidance in [error message](/components/error-message/) and have specific error messages for specific error states.
 
