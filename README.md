@@ -27,7 +27,7 @@ To enable this we use [nvm (Node Version Manager)](https://github.com/creationix
 1. [install nvm](https://github.com/creationix/nvm#installation)
 2. Run `nvm install` in the project directory (this will use [.nvmrc](./.nvmrc))
 
-If you get nvm: command not found when you run `nvm install`, try: <https://github.com/creationix/nvm/issues/576#issuecomment-89841367>
+If you get `nvm: command not found` when you run `nvm install`, try: <https://github.com/creationix/nvm/issues/576#issuecomment-89841367>
 
 ### Install npm dependencies
 ```
