@@ -6,22 +6,8 @@
   background-color: govuk-colour("grey-4");
   border: 1px solid $govuk-border-colour;
 
-  .app-contact-panel__heading,
-  .app-contact-panel__body,
-  .app-contact-panel__link {
-    color: govuk-colour("black");
-  }
-
   .app-contact-panel__heading {
     color: govuk-colour("light-green");
-  }
-
-  .app-contact-panel__link:hover {
-    color: lighten(govuk-colour("light-blue"), 45%);
-  }
-
-  .app-contact-panel__link:focus {
-    color: $govuk-focus-text-colour;
   }
 }
 
