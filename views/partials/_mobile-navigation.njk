@@ -1,7 +1,7 @@
 <nav id="app-mobile-nav" class="app-mobile-nav js-app-mobile-nav" role="navigation">
   <ul class="app-mobile-nav__list">
     {% for item in navigation %}
-      {% if item.label != "Community" %}
+      {% if item.label != "Community" and item.label !="Get started" %}
     <li>
       <a class="govuk-link js-mobile-nav-subnav-toggler{% if item.url in path %} app-mobile-nav__subnav-toggler--active{% endif %}" href="/{{ item.url }}">{{ item.label }}</a>
       {% if item.items %}
