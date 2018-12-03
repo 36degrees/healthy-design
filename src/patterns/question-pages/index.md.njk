@@ -12,7 +12,7 @@ layout: layout-pane.njk
 
 This pattern explains when to use question pages and what elements they need to include.
 
-{{ example({group: "patterns", item: "question-pages", example: "default", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "patterns", item: "question-pages", example: "default", html: true, nunjucks: false, open: false}) }}
 
 ## When to use this pattern
 
@@ -44,7 +44,7 @@ Page headings can be statements or questions.
 
 If you need to ask for multiple related things on a page, use a statement as the heading.
 
-{{ example({group: "patterns", item: "question-pages", example: "passport", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "patterns", item: "question-pages", example: "passport", html: true, nunjucks: false, open: false}) }}
 
 If you only asking for one piece of information per page, you can set the contents of the `<label>` or `<legend>` as the page heading.
 
@@ -54,11 +54,11 @@ Read more about why and [how to set legends and labels as page headings](https:/
 
 #### Legend as page heading
 
-{{ example({group: "patterns", item: "question-pages", example: "date-of-birth", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "patterns", item: "question-pages", example: "date-of-birth", html: true, nunjucks: false, open: false}) }}
 
 #### Label as a page heading
 
-{{ example({group: "patterns", item: "question-pages", example: "postcode", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "patterns", item: "question-pages", example: "postcode", html: true, nunjucks: false, open: false}) }}
 
 Don’t duplicate the same page heading across multiple pages.
 
@@ -83,7 +83,7 @@ Start by testing your form without a progress indicator to see if it’s simple 
 
 Try improving the order, type or number of questions before adding a progress indicator. If people still have difficulty, try adding a simple step or question indicator like this one.
 
-{{ example({group: "patterns", item: "question-pages", example: "progress", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "patterns", item: "question-pages", example: "progress", html: true, nunjucks: false, open: false}) }}
 
 Only include the total number of questions if you can do so reliably. As the user moves through the form, make sure the indicator updates to tell them which question they are on and the total number remaining.
 

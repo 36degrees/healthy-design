@@ -9,7 +9,7 @@ layout: layout-pane.njk
 
 {% from "_example.njk" import example %}
 
-{{ example({group: "components", item: "button", example: "default", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "button", example: "default", html: true, nunjucks: false, open: false}) }}
 
 ## When to use this component
 
@@ -21,7 +21,7 @@ Write button text in sentence case, describing the action it performs. For examp
 
 Align the primary action button to the left edge of your form.
 
-There are 2 ways to use the button component. You can use HTML or, if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com), you can use the Nunjucks macro.
+<!-- There are 2 ways to use the button component. You can use HTML or, if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com), you can use the Nunjucks macro. -->
 
 ### Disabled buttons
 
@@ -29,13 +29,13 @@ Disabled buttons have poor contrast and can confuse some users, so avoid them if
 
 Only use disabled buttons if research shows it makes the user interface easier to&nbsp;understand.
 
-{{ example({group: "components", item: "button", example: "disabled", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "button", example: "disabled", html: true, nunjucks: false, open: false}) }}
 
 ### Start buttons
 
 Use a start button as the main call to action on your service’s start page.
 
-{{ example({group: "components", item: "button", example: "start", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "button", example: "start", html: true, nunjucks: false, open: false}) }}
 
 ## Research on this component
 

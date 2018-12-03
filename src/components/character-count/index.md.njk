@@ -14,7 +14,7 @@ Help users enter text when there is a limit on the number of characters they can
 
 {% from "_example.njk" import example %}
 
-{{ example({group: "components", item: "character-count", example: "default", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "character-count", example: "default", html: true, nunjucks: false, open: false}) }}
 
 ## When to use this component
 
@@ -45,10 +45,10 @@ The count message appears below the textarea so that:
 
 This component uses JavaScript. If JavaScript is not available, users will see a static message in place of the count message, telling them how many characters they can enter.
 
-There are 2 ways to use the character count component. You can use HTML or, if you’re using Nunjucks or the GOV.UK Prototype Kit, you can use the Nunjucks macro.
+<!-- There are 2 ways to use the character count component. You can use HTML or, if you’re using Nunjucks or the GOV.UK Prototype Kit, you can use the Nunjucks macro. -->
 
 {% from "_example.njk" import example %}
-{{ example({group: "components", item: "character-count", example: "label-page-heading", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "character-count", example: "label-page-heading", html: true, nunjucks: false, open: false}) }}
 
 ### Consider if a word count is more helpful
 
@@ -57,7 +57,7 @@ In some cases, for example, if users have to enter a long answer, it may be more
 Do this by setting `data-maxwords` in the component markup. For example, `data-maxwords="150"` will set a word limit of 150. 
 
 {% from "_example.njk" import example %}
-{{ example({group: "components", item: "character-count", example: "word-count", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "character-count", example: "word-count", html: true, nunjucks: false, open: false}) }}
 
 ### Avoid narrow limits
 
@@ -68,7 +68,7 @@ If the limit is much higher than most users are likely to reach, you can choose 
 To do this, you need to set a threshold in the component markup. For example, `data-threshold="75"` will show the count message only when users have entered 75% of the limit.
 
 {% from "_example.njk" import example %}
-{{ example({group: "components", item: "character-count", example: "threshold", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "character-count", example: "threshold", html: true, nunjucks: false, open: false}) }}
 
 Make the textarea slightly taller than the amount of content your limit allows. This lets users see and edit their full answer if they’ve only typed slightly over the limit.
 
@@ -78,7 +78,7 @@ Error messages should be styled like this:
 
 {% from "_example.njk" import example %}
 
-{{ example({group: "components", item: "character-count", example: "error", html: true, nunjucks: true, open: false}) }}
+{{ example({group: "components", item: "character-count", example: "error", html: true, nunjucks: false, open: false}) }}
 
 If a user tries to submit their response with too many characters, you must show a validation error message above the field in addition to the count message below it.
 
