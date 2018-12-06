@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Date input – Example – GOV.UK Design System</title>
+    <link href="/stylesheets/main-5002e4b83873c0f3506b3d0e8d470f20.css" rel="stylesheet" media="all" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="/javascripts/head-ie8-3bdeff766c8e82bdaeaf6f5accfc18e3.js"></script>
+    <![endif]-->
+    <script src="/javascripts/vendor/modernizr.js"></script>
+  </head>
+  <body class="app-example-page">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <!-- Disable browser validation for any examples that include form elements -->
+    <form novalidate>
+      
+        
+
+
+
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">    <h1 class="govuk-fieldset__heading">
+      What is your date of birth?
+    </h1>
+</legend>
+  <span id="dob-hint" class="govuk-hint">
+    For example, 31 3 1980
+  </span>
+  <div class="govuk-date-input" id="dob">
+    <div class="govuk-date-input__item">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-date-input__label" for="dob-day">
+          Day
+        </label>
+        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+      </div>
+    </div>
+    <div class="govuk-date-input__item">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-date-input__label" for="dob-month">
+          Month
+        </label>
+        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+      </div>
+    </div>
+    <div class="govuk-date-input__item">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-date-input__label" for="dob-year">
+          Year
+        </label>
+        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+      </div>
+    </div>
+  </div>
+</fieldset>
+</div>
+
+
+      
+    </form>
+    <script src="/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="/javascripts/govuk-frontend-bc538456331900cfc25b1fa92de36f7d.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabs – Example – GOV.UK Design System</title>
+    <link href="/stylesheets/main-5002e4b83873c0f3506b3d0e8d470f20.css" rel="stylesheet" media="all" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="/javascripts/head-ie8-3bdeff766c8e82bdaeaf6f5accfc18e3.js"></script>
+    <![endif]-->
+    <script src="/javascripts/vendor/modernizr.js"></script>
+  </head>
+  <body class="app-example-page">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <!-- Disable browser validation for any examples that include form elements -->
+    <form novalidate>
+      
+        
+
+
+<div class="govuk-tabs" data-module="tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+          Past day
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#past-week">
+          Past week
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#past-month">
+          Past month
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#past-year">
+          Past year
+        </a>
+      </li>
+  </ul>
+
+  <section class="govuk-tabs__panel" id="past-day">
+    <h2 class="govuk-heading-l">Past day</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Case manager</th>
+      <th class="govuk-table__header" scope="col">Cases opened</th>
+      <th class="govuk-table__header" scope="col">Cases closed</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">David Francis</td>
+      <td class="govuk-table__cell">3</td>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Paul Farmer</td>
+      <td class="govuk-table__cell">1</td>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Rita Patel</td>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l">Past week</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Case manager</th>
+      <th class="govuk-table__header" scope="col">Cases opened</th>
+      <th class="govuk-table__header" scope="col">Cases closed</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">David Francis</td>
+      <td class="govuk-table__cell">24</td>
+      <td class="govuk-table__cell">18</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Paul Farmer</td>
+      <td class="govuk-table__cell">16</td>
+      <td class="govuk-table__cell">20</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Rita Patel</td>
+      <td class="govuk-table__cell">24</td>
+      <td class="govuk-table__cell">27</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+    <h2 class="govuk-heading-l">Past month</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Case manager</th>
+      <th class="govuk-table__header" scope="col">Cases opened</th>
+      <th class="govuk-table__header" scope="col">Cases closed</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">David Francis</td>
+      <td class="govuk-table__cell">98</td>
+      <td class="govuk-table__cell">95</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Paul Farmer</td>
+      <td class="govuk-table__cell">122</td>
+      <td class="govuk-table__cell">131</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Rita Patel</td>
+      <td class="govuk-table__cell">126</td>
+      <td class="govuk-table__cell">142</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+    <h2 class="govuk-heading-l">Past year</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Case manager</th>
+      <th class="govuk-table__header" scope="col">Cases opened</th>
+      <th class="govuk-table__header" scope="col">Cases closed</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">David Francis</td>
+      <td class="govuk-table__cell">1380</td>
+      <td class="govuk-table__cell">1472</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Paul Farmer</td>
+      <td class="govuk-table__cell">1129</td>
+      <td class="govuk-table__cell">1083</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Rita Patel</td>
+      <td class="govuk-table__cell">1539</td>
+      <td class="govuk-table__cell">1265</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </section>
+</div>
+
+
+      
+    </form>
+    <script src="/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="/javascripts/govuk-frontend-bc538456331900cfc25b1fa92de36f7d.js"></script>
+  </body>
+</html>
