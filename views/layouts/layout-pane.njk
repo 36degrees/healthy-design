@@ -28,10 +28,9 @@
           {{ title }}
           {% if status %}
           <div>
-            <strong class="govuk-tag govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+            <p class="govuk-body govuk-!-margin-top-4 govuk-!-margin-bottom-2"><strong class="govuk-tag">
               {{ status }}
-            </strong>
-            <p class="govuk-body">{{ statusMessage | safe }}</p>
+            </strong> {{ statusMessage | safe }}</p>
           </div>
           {% endif %}
         </h1>
