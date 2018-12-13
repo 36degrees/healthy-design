@@ -1,0 +1,61 @@
+// Override govuk colors
+
+@import "../../../node_modules/govuk-frontend/settings/colours-palette";
+
+$ch-colors: (
+  "light-green": #7ac142
+);
+
+
+//// 
+/// https://medium.com/@pentzzsolt/a-non-destructive-map-merge-function-for-sass-f91637f87b2e
+////
+
+@function non-destructive-map-merge($parent-map, $child-map) {
+	$result: $parent-map;
+	@each $key, $value in $child-map {
+		@if (not map-has-key($result, $key)) or (type-of(map-get($result, $key)) != type-of($value)) or (not (type-of(map-get($result, $key)) == map and type-of($value) == map)) {
+			$result: map-merge($result, ($key: $value));
+		}
+		@else {
+			$result: map-merge($result, ($key: non-destructive-map-merge(map-get($result, $key), $value)));
+		}
+	}
+	@return $result;
+}
+
+$colors: non-destructive-map-merge($govuk-colours, $ch-colors);
+
+////
+/// @group helpers/colour
+////
+
+/// Get colour
+///
+/// @param {String} $color - Name of color from the color palette
+///   (`$colors`)
+/// @return {Color} Representation of named color
+/// @throw if `$color` is not a color from the color palette
+/// @access public
+
+@function ch-color($color) {
+  $color: quote($color);
+
+  @if not map-has-key($colors, $color) {
+    @error "Unknown color `#{$color}`";
+  }
+
+  @return map-get($colors, $color);
+}
+
+.app-header {
+  border-bottom-color: ch-color("light-green");
+}
+
+.app-site-search__wrapper {
+  background-color: ch-color("light-green");
+}
+
+.govuk-tag {
+  background-color: ch-color("light-green");
+}
